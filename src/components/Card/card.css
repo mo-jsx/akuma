@@ -39,7 +39,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 700px) {
   .card img {
     height: auto;
     border-radius: 0;
