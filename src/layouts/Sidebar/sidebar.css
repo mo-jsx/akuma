@@ -23,6 +23,7 @@
 .sidebar ul li a time {
   margin: 0px 20px 0px 0px;
   font-weight: bold;
+  color: var(--secondary-color);
 }
 .sidebar ul li a p {
   overflow: hidden;
