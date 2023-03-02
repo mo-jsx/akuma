@@ -1,0 +1,19 @@
+.feed {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.feed ul {
+  margin: 0;
+  padding: 0;
+}
+.feed ul li {
+  line-height: normal;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+.feed ul li:hover {
+  transform: scale(0.98);
+  transition: 0.4s ease-in-out;
+}
