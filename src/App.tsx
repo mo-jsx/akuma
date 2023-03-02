@@ -1,10 +1,11 @@
 import React from 'react';
+import News from "./layouts/News/News";
 import "./styles/app.css";
 
 const App = () => {
   return (
     <div className="app">
-      <div className="news">News</div>
+      <News />
       <div className="sidebar">Hot News</div>
     </div>
   )
