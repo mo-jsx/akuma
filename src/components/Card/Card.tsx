@@ -9,7 +9,7 @@ const Card = (props: {data: DataProps}) => {
     const { data } = props;
 
   return (
-    <div>{data.title}</div>
+    <div data-testId="title">{data.title}</div>
   )
 }
 
