@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .card {
     position: relative;
     display: inline-block;
@@ -26,8 +28,8 @@
         background: rgb(2, 0, 36);
         background: linear-gradient(
             0deg,
-            rgba(2, 0, 36, 0.5) 0%,
-            rgba(255, 255, 255, 0) 30%
+            rgba(2, 0, 36, 0.8) 0%,
+            rgba(255, 255, 255, 0) 80%
             );
         }
         
@@ -50,6 +52,18 @@
     
     .readmore {
         text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: $small) {
+    .card {
+        img {
+            height: auto;
+        }
+        
+        h1 {
+            font-size: 1rem;
+        }
     }
 }
 

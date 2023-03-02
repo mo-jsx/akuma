@@ -21,7 +21,7 @@
   z-index: 1;
   border-radius: 1rem;
   background: rgb(2, 0, 36);
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.5) 0%, rgba(255, 255, 255, 0) 30%);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
 }
 .card:hover .overlay {
   animation: overlayUp 100s infinite;
@@ -39,6 +39,14 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width: 765px) {
+  .card img {
+    height: auto;
+  }
+  .card h1 {
+    font-size: 1rem;
+  }
+}
 /* ANIMATION */
 @keyframes overlayUp {
   0% {
