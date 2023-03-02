@@ -2,5 +2,39 @@
     grid-area: 2/3/3/4;
     height: 100%;
     width: 100%;
-    background-color: cornflowerblue;
+    // background-color: cornflowerblue;
+    margin: 2rem 0rem;
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            margin: 1rem 0rem;
+            padding: 0px 0px 10px 0px;
+            border-bottom: 1px solid var(--underline-color);
+            
+            a {
+                display: flex;
+                flex-direction: row;
+                
+                time {
+                    margin: 0px 20px 0px 0px;
+                    font-weight: bold;
+                }
+                
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                            line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
 }
