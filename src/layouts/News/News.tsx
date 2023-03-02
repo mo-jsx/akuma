@@ -1,11 +1,13 @@
 // MODULES
 import React from 'react';
 import sortByPopularity from "../../utils/sortByPopularity";
+
 // TYPES 
 import { DataProps } from 'types/DataProps';
 
 // COMPONENTS
 import Card from "../../components/Card/Card";
+import Feed from "../../components/Feed/Feed";
 
 // FILES
 import "./news.css";
@@ -20,7 +22,7 @@ const News = (props: { data: DataProps[]}) => {
   return (
     <div className="news">
         <Card data={head} />
-        <div>Feed</div>
+        <Feed data={tail} />
     </div>
   )
 }
