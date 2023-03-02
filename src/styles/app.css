@@ -8,3 +8,19 @@
   height: 100svh;
   width: 100%;
 }
+
+.sidebar {
+  grid-area: 2/3/3/4;
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 765px) {
+  .app {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 800px auto;
+    grid-gap: 1rem;
+  }
+}
