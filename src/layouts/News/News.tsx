@@ -5,7 +5,7 @@ import "./news.css";
 const News = () => {
   return (
     <div className="news">
-        <Card />
+        <Card data={} />
         <div>Feed</div>
     </div>
   )
