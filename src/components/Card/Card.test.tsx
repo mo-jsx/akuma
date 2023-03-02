@@ -3,8 +3,7 @@ import Card from "./Card";
 import { DataProps } from "../../types/DataProps";
 
 describe("Card", () => {
-    // let data: DataProps;
-    const data = {
+    const data: DataProps = {
         id: 123,
         title: "Lorem ipsum dolor sit amet.",
         popularity: 0.1,
