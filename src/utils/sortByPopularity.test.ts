@@ -33,7 +33,7 @@ describe("sort array by popularity", () => {
     console.log(data);
     
 
-    test("sort asc", () => {
+    test("sort desc", () => {
         const sortedData = data.sort(sortByPopularity)
 
         for(let i = 0; i < sortedData.length - 1; i++) {
