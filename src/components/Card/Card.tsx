@@ -5,11 +5,11 @@ import React from 'react';
 import { DataProps } from "types/DataProps";
 import "./card.css";
 
-const Card = (props: DataProps) => {
-    const { title } = props;
+const Card = (props: {data: DataProps}) => {
+    const { data } = props;
 
   return (
-    <div>{title}</div>
+    <div>{data.title}</div>
   )
 }
 
