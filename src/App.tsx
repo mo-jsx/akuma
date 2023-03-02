@@ -48,7 +48,7 @@ const App = () => {
   return (
     <div className="app">
       <News data={data} />
-      <Sidebar />
+      <Sidebar data={data} />
     </div>
   )
 }
