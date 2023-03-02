@@ -1,5 +1,6 @@
 .feed {
   height: auto;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +14,40 @@
   margin: 1rem 0;
   padding: 0;
 }
+.feed ul li:nth-child(n+10) {
+  display: none;
+}
 .feed ul li:hover {
   transform: scale(0.98);
   transition: 0.4s ease-in-out;
+}
+.feed ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.feed ul li a .chev {
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 765px) {
+  .feed {
+    margin: 1rem 1rem;
+    font-size: 0.8rem;
+  }
+  .feed ul {
+    margin: 0rem;
+  }
+  .feed ul li {
+    border-bottom: 1px solid var(--underline-color);
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  .feed ul li:nth-child(n+10) {
+    display: none;
+  }
+  .feed ul li:hover {
+    transform: scale(1);
+  }
 }
