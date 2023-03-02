@@ -2,9 +2,17 @@
   display: grid;
   grid-template-columns: 25% 600px 300px 25%;
   grid-template-rows: 10% 80% 10%;
+  height: 100vh;
+  height: 100svh;
+  width: 100wv;
 }
 
 .news {
   grid-area: 2/2/3/3;
   background-color: bisque;
+}
+
+.sidebar {
+  grid-area: 2/3/3/4;
+  background-color: cornflowerblue;
 }
