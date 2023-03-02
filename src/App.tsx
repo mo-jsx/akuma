@@ -7,6 +7,7 @@ import { DataProps } from './types/DataProps';
 
 // LAYOUTS
 import News from "./layouts/News/News";
+import Sidebar from "./layouts/Sidebar/Sidebar";
 
 // FILES
 import "./styles/app.css";
@@ -47,7 +48,7 @@ const App = () => {
   return (
     <div className="app">
       <News data={data} />
-      <div className="sidebar">Hot News</div>
+      <Sidebar />
     </div>
   )
 }
