@@ -7,9 +7,10 @@ import "./card.css";
 
 const Card = (props: {data: DataProps}) => {
     const { data } = props;
+    const { title } = data;
 
   return (
-    <div data-testId="title">{data.title}</div>
+    <div data-testId="title">{title}</div>
   )
 }
 
