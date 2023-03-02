@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .news {
     grid-area: 2 / 2 / 3 / 3;
     height: 100%;
@@ -5,5 +7,11 @@
 
     .date {
         margin: 10px;
+    }
+}
+
+@media screen and (max-width: $small) {
+    .news {
+        grid-area: 2 / 1 / 3 / 2;
     }
 }

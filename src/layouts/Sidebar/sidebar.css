@@ -33,3 +33,9 @@
   line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
+@media screen and (max-width: 765px) {
+  .sidebar {
+    display: none;
+  }
+}

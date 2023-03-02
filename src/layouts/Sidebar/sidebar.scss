@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .sidebar {
     grid-area: 2/3/3/4;
     height: 100%;
@@ -37,5 +39,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .sidebar {
+        display: none;
     }
 }
