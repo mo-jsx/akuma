@@ -10,7 +10,17 @@ const Card = (props: {data: DataProps}) => {
     const { title } = data;
 
   return (
-    <div data-testId="title">{title}</div>
+    <div className="card" data-testid="title">
+            <img src={"https://picsum.photos/id/12/2500/1667"} alt={"Hello there!"} />
+            <div className="overlay"></div>
+            <a href={"#"}>
+                {
+                    title.length > 30
+                    ? <h1>{title.slice(0, 30)}... <span className="readmore">Read more</span></h1>
+                    : <h1>{title}</h1>
+                }
+            </a>
+    </div>
   )
 }
 
