@@ -13,6 +13,8 @@ import "./news.css";
 const News = (props: { data: DataProps[]}) => {
   const { data } = props;
 
+  console.log(data);
+  
   const head = data[0]
 
   return (
