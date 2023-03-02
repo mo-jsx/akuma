@@ -1,6 +1,6 @@
 // MODULES
 import React from 'react';
-
+import sortByPopularity from "../../utils/sortByPopularity";
 // TYPES 
 import { DataProps } from 'types/DataProps';
 
@@ -13,10 +13,10 @@ import "./news.css";
 const News = (props: { data: DataProps[]}) => {
   const { data } = props;
 
-  console.log(data);
-  
-  const head = data[0]
+    //Sort by popularity
+    const sortedData:DataProps[] = data.sort(sortByPopularity)
 
+    const [head, ...tail] = sortedData;
   return (
     <div className="news">
         <Card data={head} />
