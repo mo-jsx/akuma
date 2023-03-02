@@ -6,8 +6,7 @@ import { DataProps } from "types/DataProps";
 import "./card.css";
 
 const Card = (props: {data: DataProps}) => {
-    const { data } = props;
-    const { title } = data;
+  const { data } = props;
 
   return (
     <div className="card" data-testid="title">
@@ -15,9 +14,9 @@ const Card = (props: {data: DataProps}) => {
             <div className="overlay"></div>
             <a href={"#"}>
                 {
-                    title.length > 30
-                    ? <h1>{title.slice(0, 30)}... <span className="readmore">Read more</span></h1>
-                    : <h1>{title}</h1>
+                    data?.title.length > 30
+                    ? <h1>{data.title.slice(0, 30)}... <span className="readmore">Read more</span></h1>
+                    : <h1>{data.title}</h1>
                 }
             </a>
     </div>
