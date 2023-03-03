@@ -11,24 +11,19 @@ const Feed = (props: { data: DataProps[] }) => {
     return (
         <div className="feed">
             <ul>
-                {tail.map((d: DataProps) => {
-                    const { title, id } = d;
+                {tail.map((row: DataProps) => {
+                    const { title, id } = row;
 
                     return (
                         <li key={id} title={title} data-testid={id}>
-                            {title.length > 30 ? (
-                                <a href="#">
-                                    <b>&gt;</b> {title.slice(0, 57)}...
-                                </a>
-                            ) : (
-                                <a href="#">
-                                    <b>&gt;</b> {title}
-                                </a>
-                            )}
+                            <a href="#">
+                                <span className="chev">&gt;</span> {title}
+                            </a>
                         </li>
                     );
                 })}
             </ul>
+
             {data.length > 10 && (
                 <h4 className="seemore">
                     <a href="#">See more &gt;</a>
