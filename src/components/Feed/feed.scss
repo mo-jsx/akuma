@@ -21,8 +21,10 @@
             }
 
             &:hover {
-                transform: scale(0.98);
-                transition: 0.4s ease-in-out;
+                a {
+                    transform: scale(1.05);
+                    transition: 0.4s ease-in-out;
+                }
             }
 
             a {
@@ -51,14 +53,14 @@
                 border-bottom: 1px solid var(--underline-color);
                 margin: 0px;
                 padding: 10px 0px;
-                
+
                 &:nth-child(n + 10) {
                     display: none;
                 }
 
                 &:hover {
-                transform: scale(1);
-            }
+                    transform: scale(1);
+                }
             }
         }
     }

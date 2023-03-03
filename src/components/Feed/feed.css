@@ -17,8 +17,8 @@
 .feed ul li:nth-child(n+10) {
   display: none;
 }
-.feed ul li:hover {
-  transform: scale(0.98);
+.feed ul li:hover a {
+  transform: scale(1.05);
   transition: 0.4s ease-in-out;
 }
 .feed ul li a {
