@@ -1,9 +1,20 @@
+@import "../../styles/variables";
+
 .sidebar {
     grid-area: 2/3/3/4;
     height: 100%;
     width: 100%;
-    // background-color: cornflowerblue;
     margin: 2rem 0rem;
+
+    @media screen and (max-width: $small) {
+            display: none;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        grid-area: 2 / 3 / 3 / 4;
+    }
     
     ul {
         list-style: none;

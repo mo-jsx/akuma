@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .card {
     position: relative;
     display: inline-block;
@@ -20,40 +22,53 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        
+
         border-radius: 1rem;
-        
+
         background: rgb(2, 0, 36);
         background: linear-gradient(
             0deg,
-            rgba(2, 0, 36, 0.5) 0%,
-            rgba(255, 255, 255, 0) 30%
-            );
-        }
-        
-        &:hover .overlay {
-            animation: overlayUp 100s infinite;
-        }
-        
+            rgba(2, 0, 36, 0.8) 0%,
+            rgba(255, 255, 255, 0) 80%
+        );
+    }
+
+    &:hover .overlay {
+        animation: overlayUp 100s infinite;
+    }
+
     a {
-        
         position: absolute;
         top: 100%;
         left: 00%;
         transform: translate(0%, -100%);
         z-index: 1;
-        
+
         color: white;
-        
+
         padding: 1rem;
     }
-    
+
     .readmore {
         text-decoration: underline;
     }
+
+    @media screen and (max-width: $small) {
+        img {
+            height: auto;
+            border-radius: 0;
+        }
+
+        h1 {
+            font-size: 1rem;
+        }
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        .img {
+            width: 100%;
+        }
+    }
 }
-
-
 
 /* ANIMATION */
 @keyframes overlayUp {

@@ -1,3 +1,5 @@
+@import "variables";
+
 .app {
     display: grid;
     grid-template-columns: 25% 600px 300px 25%;
@@ -9,11 +11,21 @@
     height: 100vh;
     height: 100svh;
     width: 100%;
-}
-
-.sidebar {
-    grid-area: 2 / 3 / 3 / 4;
-    height: 100%;
-    width: 100%;
-    background-color: cornflowerblue;
+    place-content: center;
+    
+    @media screen and (max-width: $small) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 100svh;
+            grid-gap: 1rem;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-gap: 1rem;
+    }
+    @media screen and (min-width: $medium) and (max-width: $large) {
+        grid-template-columns: 10% 50% 30% 10%;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-gap: 2rem;
+    }
 }
