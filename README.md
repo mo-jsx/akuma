@@ -29,7 +29,31 @@ Below I will explain how I did proceed and organise the work and comment about t
 
 ---
 
-## Assignment
+## Setup 
+
+Run in development mode : 
+```
+npm run dev
+```
+
+Run test : 
+```
+npm run test
+```
+
+Run cypress : 
+```
+npm run cypress:open
+```
+
+Build project : 
+```
+npm run build
+```
+
+---
+
+# Assignment
 ## Test Plan 
 I do believe that tests are an important cornerstone when building an application. Testing prevent and catch bugs beforehand and can be a documentation itself.
 
