@@ -9,10 +9,10 @@
     @media screen and (max-width: $small) {
             display: none;
     }
-    @media screen and (min-width: $small) and (max-width: $medium) {
-        grid-area: 2 / 2 / 3 / 3;
+    @media screen and (min-width: ($small)) and (max-width: $medium) {
+        grid-area: 2 / 3 / 3 / 4;
     }
-    @media screen and (min-width: $small) and (max-width: $medium) {
+    @media screen and (min-width: ($medium + 1)) and (max-width: $large) {
         grid-area: 2 / 3 / 3 / 4;
     }
     

@@ -18,12 +18,12 @@
             grid-template-rows: 100svh;
             grid-gap: 1rem;
     }
-    @media screen and (min-width: $small) and (max-width: $medium) {
-        grid-template-columns: 1fr 1fr;
+    @media screen and (min-width:($small)) and (max-width: $medium) {
+        grid-template-columns: 5% 1fr 1fr 5%;
         grid-template-rows: 1fr 4fr 1fr;
         grid-gap: 1rem;
     }
-    @media screen and (min-width: $medium) and (max-width: $large) {
+    @media screen and (min-width: ($medium + 1)) and (max-width: $large) {
         grid-template-columns: 10% 50% 30% 10%;
         grid-template-rows: 1fr 4fr 1fr;
         grid-gap: 2rem;

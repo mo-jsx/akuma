@@ -35,6 +35,9 @@
   color: white;
   padding: 1rem;
 }
+.card a:hover {
+  color: white;
+}
 .card .readmore {
   text-decoration: underline;
 }

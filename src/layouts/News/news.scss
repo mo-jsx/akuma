@@ -5,12 +5,12 @@
     height: 100%;
     width: 100%;
     @media screen and (max-width: $small) {
-            grid-area: 1 / 1 / 2 / 2;
+        grid-area: 1 / 1 / 2 / 2;
     }
-    @media screen and (min-width: $small) and (max-width: $medium) {
-        grid-area: 2 / 1 / 3 / 2;
+    @media screen and (min-width: ($small)) and (max-width: $medium) {
+        grid-area: 2 / 2 / 3 / 3;
     }
-    @media screen and (min-width: $medium) and (max-width: $large) {
+    @media screen and (min-width: ($medium + 1)) and (max-width: $large) {
         grid-area: 2 / 2 / 3 / 3;
     }
 
