@@ -6,8 +6,7 @@ import sortByPopularity from "../../utils/sortByPopularity";
 import { DataProps } from "types/DataProps";
 
 // COMPONENTS
-import Card from "../../components/Card/Card";
-import Feed from "../../components/Feed/Feed";
+import {Card, Feed} from "../../components/";
 
 // FILES
 import "./news.css";

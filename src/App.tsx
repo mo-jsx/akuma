@@ -6,8 +6,7 @@ import * as Papa from "papaparse";
 import { DataProps } from './types/DataProps';
 
 // LAYOUTS
-import News from "./layouts/News/News";
-import Sidebar from "./layouts/Sidebar/Sidebar";
+import {News, Sidebar} from "./layouts/";
 
 // FILES
 import "./styles/app.css";
