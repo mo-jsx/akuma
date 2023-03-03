@@ -38,7 +38,6 @@
 .card .readmore {
   text-decoration: underline;
 }
-
 @media screen and (max-width: 700px) {
   .card img {
     height: auto;
@@ -48,6 +47,12 @@
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .card .img {
+    width: 100%;
+  }
+}
+
 /* ANIMATION */
 @keyframes overlayUp {
   0% {
