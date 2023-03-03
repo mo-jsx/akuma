@@ -15,7 +15,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["cypress", "node"],
     "baseUrl": "./src/",
     "paths": {
       "assets": ["assets/*"],

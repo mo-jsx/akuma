@@ -1,37 +1,9 @@
 import sortByPopularity from "./sortByPopularity";
 import { DataProps } from "../types/DataProps";
+import {generateData} from "./";
 
 describe("sort array by popularity", () => {
-    const data: DataProps[] = [
-        {
-            id: 123,
-            title: "Lorem ipsum dolor sit amet.",
-            popularity: Math.random(),
-            timestamp: new Date(),
-        },
-        {
-            id: 234,
-            title: "Lorem ipsum dolor sit amet.",
-            popularity: Math.random(),
-            timestamp: new Date(),
-        },
-        {
-            id: 345,
-            title: "Lorem ipsum dolor sit amet.",
-            popularity: Math.random(),
-            timestamp: new Date(),
-        },
-        {
-            id: 456,
-            title: "Lorem ipsum dolor sit amet.",
-            popularity: Math.random(),
-            timestamp: new Date(),
-        },
-
-    ]
-
-    console.log(data);
-    
+    const data: DataProps[] = generateData(10)
 
     test("sort desc", () => {
         const sortedData = data.sort(sortByPopularity)
