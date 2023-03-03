@@ -1,6 +1,13 @@
+// MODULES
 import React from 'react';
+
+// TYPES
 import { DataProps } from 'types/DataProps';
+
+// HELPERS
 import sortByTime from "../../utils/sortByTime";
+
+// FILES
 import "./sidebar.css";
 
 const Sidebar = (props: { data: DataProps[]}) => {

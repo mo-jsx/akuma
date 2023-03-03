@@ -1,12 +1,14 @@
 // MODULES
 import React from "react";
-import sortByPopularity from "../../utils/sortByPopularity";
+
+// COMPONENTS
+import {Card, Feed} from "../../components/";
 
 // TYPES
 import { DataProps } from "types/DataProps";
 
-// COMPONENTS
-import {Card, Feed} from "../../components/";
+// HELPERS
+import sortByPopularity from "../../utils/sortByPopularity";
 
 // FILES
 import "./news.css";

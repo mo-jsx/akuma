@@ -3,6 +3,8 @@ import React from 'react';
 
 //TYPES
 import { DataProps } from "types/DataProps";
+
+// FILES
 import "./card.css";
 
 const Card = (props: {data: DataProps}) => {

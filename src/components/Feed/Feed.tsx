@@ -1,6 +1,10 @@
+// MODULES
 import React from "react";
+
+// TYPES
 import { DataProps } from "types/DataProps";
 
+// FILES
 import "./feed.css";
 
 const Feed = (props: { data: DataProps[] }) => {
