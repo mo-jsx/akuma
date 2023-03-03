@@ -7,4 +7,26 @@
   height: 100vh;
   height: 100svh;
   width: 100%;
+  place-content: center;
+}
+@media screen and (max-width: 700px) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100svh;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .app {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .app {
+    grid-template-columns: 10% 50% 30% 10%;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-gap: 2rem;
+  }
 }
