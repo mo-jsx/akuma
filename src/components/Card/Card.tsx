@@ -13,11 +13,7 @@ const Card = (props: {data: DataProps}) => {
             <img src={"https://picsum.photos/id/12/2500/1667"} alt={"Hello there!"} />
             <div className="overlay"></div>
             <a href={"#"}>
-                {
-                    data?.title.length > 30
-                    ? <h1>{data.title.slice(0, 30)}... <span className="readmore">Read more</span></h1>
-                    : <h1>{data.title}</h1>
-                }
+              <h1>{data?.title}</h1>
             </a>
     </div>
   )
