@@ -50,7 +50,7 @@ Here's how I did tackle this small project :
 
 
 ### End-to-end Tests:
-- Even tho this was a small application we don't , but end-to-end tests should be written to test the entire flow of the application.
+- Even tho this was a small application I didn't have much flow to work on, but end-to-end tests should be written to test the entire flow of the application.
 - Test user interactions like signing up, logging in, and completing forms.
 - Test the application across different browsers and devices.
 - I usually make use of Cypress as a testing framework to run end-to-end tests.
