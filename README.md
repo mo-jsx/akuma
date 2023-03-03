@@ -31,7 +31,7 @@ Below I will explain how I did proceed and organise the work and comment about t
 
 ## Assignment
 ## Test Plan 
-I do believe that tests are an most cornerstone when build a build an application. Testing files prevent and catch some bugs beforehand and can be a documentation itself.
+I do believe that tests are an important cornerstone when building an application. Testing prevent and catch bugs beforehand and can be a documentation itself.
 
 During the development phase I adepted the TDD methology and its best practices.
 
