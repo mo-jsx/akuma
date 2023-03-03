@@ -31,6 +31,19 @@
   padding: 0px 0px 10px 0px;
   border-bottom: 1px solid var(--underline-color);
 }
+.sidebar ul li:nth-child(n+12) {
+  display: none;
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .sidebar ul li:nth-child(n+10) {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px1) and (max-width: 1440px) {
+  .sidebar ul li:nth-child(n+14) {
+    display: none;
+  }
+}
 .sidebar ul li a {
   display: flex;
   flex-direction: row;

@@ -13,9 +13,7 @@ import "./sidebar.css";
 const Sidebar = (props: { data: DataProps[]}) => {
         const { data } = props;
     
-        data.sort(sortByTime)
-    
-      const tail = data.slice(0, 8)
+        const tail = data.sort(sortByTime)
     
         return (
             <aside className="sidebar">
