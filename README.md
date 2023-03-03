@@ -44,7 +44,6 @@ Here's how I did tackle this small project :
 - Used Jest as a test framework to run tests.
 
 ### Integration Tests:
-- Integration tests are written to test the interactions between components.
 - Test the rendering of the app in different scenarios.
 - Test user interactions like clicking on buttons or links.
 - Used Cypress as testing framework to run integration tests.
