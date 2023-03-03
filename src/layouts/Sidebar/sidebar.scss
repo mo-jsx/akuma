@@ -5,6 +5,16 @@
     height: 100%;
     width: 100%;
     margin: 2rem 0rem;
+
+    @media screen and (max-width: $small) {
+            display: none;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        grid-area: 2 / 3 / 3 / 4;
+    }
     
     ul {
         list-style: none;
@@ -38,11 +48,5 @@
                 }
             }
         }
-    }
-}
-
-@media screen and (max-width: $small) {
-    .sidebar {
-        display: none;
     }
 }
