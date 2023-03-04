@@ -2,7 +2,7 @@
 import React from "react";
 
 // COMPONENTS
-import {Card, Feed} from "../../components/";
+import { Card, Feed } from "../../components/";
 
 // TYPES
 import { DataProps } from "types/DataProps";

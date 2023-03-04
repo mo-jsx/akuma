@@ -8,10 +8,10 @@ const data: DataProps[] = generateData(20);
 
 describe("Feed", () => {
     test("Feed is rendering", () => {
-        render(<Feed data={data}/>);
+        render(<Feed data={data} />);
 
-        data.forEach(row => {
-            expect(screen.getByTestId(row.id)).toBeInTheDocument()
-        })
-    })
-})
+        data.forEach((row) => {
+            expect(screen.getByTestId(row.id)).toBeInTheDocument();
+        });
+    });
+});

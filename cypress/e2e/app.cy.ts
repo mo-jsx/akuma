@@ -1,5 +1,5 @@
-describe('App Home Page', () => {
+describe("App Home Page", () => {
     it("Successfuly loads", () => {
         cy.visit("/");
-    })
- })
+    });
+});

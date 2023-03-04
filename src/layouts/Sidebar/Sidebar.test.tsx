@@ -1,6 +1,14 @@
 import { render, screen } from "@testing-library/react";
+import { DataProps } from "types/DataProps";
+import generateData from "utils/generateData";
 import Sidebar from "./Sidebar";
 
 describe("Sidebar", () => {
-    test.todo("Sidebar is rendering")
-})
+    const data: DataProps[] = generateData(20);
+
+    test("Sidebar is rendering", () => {
+        render(<Sidebar data={data} />);
+
+        data.forEach((item) => expect(item.title).toBeInTheDocument());
+    });
+});
