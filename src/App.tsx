@@ -17,7 +17,7 @@ const App = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("./src/assets/newsSource.csv");
+                const response = await fetch("/assets/newsSource.csv");
 
                 Papa.parse(await response.text(), {
                     header: true,
